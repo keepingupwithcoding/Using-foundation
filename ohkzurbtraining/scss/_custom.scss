@@ -1,0 +1,37 @@
+
+body {
+  background: url('../assets/white_pattern.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: #b8b3c3;
+}
+
+.wrap {
+  width: 84%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: white;
+}
+#myname {
+  font-weight: bolder;
+  font-size: 1.4em;
+  // margin: 0.5em auto;
+}
+.moto {
+  display: flex;
+  color: red;
+  font-size: 1.04em;
+  font-style: italic;
+  align-self: center;
+}
+.ohk_hero {
+  background: url('../assets/1920.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.callout {
+  background-color: rgba(255, 222, 173, 0);
+}
