@@ -32,9 +32,13 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  background: url('../assets/1920.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .logo-image{
-  background: url('../assets/wantoks-logo.jpg');
+  background: url('../assets/musket.png');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -48,13 +52,12 @@ body {
   font-weight: bold;
   font-size: 1.2em;
 }
-
-
-
+#main-nav{
+  // background-color: rgb(255, 244, 218);
+}
 .top-bar{
   background-color: rgba(230, 230, 230, 0);
   margin-bottom: 51px;
-  margin-top: 10px;
 }
 .top-bar-right{
   width: 100%;
@@ -63,6 +66,7 @@ body {
 }
 .top-bar, .top-bar ul{
   background-color: rgba(230, 230, 230, 0);
+  // background-color: rgba(255, 159, 159, 0.25);
 }
 .is-dropdown-submenu{
   border: none;
@@ -142,4 +146,7 @@ body {
       display: none;
     }
   }
+}
+a{
+  color: #ee783f;
 }
