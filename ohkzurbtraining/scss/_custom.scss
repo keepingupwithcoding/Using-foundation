@@ -5,13 +5,69 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-color: #b8b3c3;
+  height: 100vh;
+  margin: 0 auto;
+  max-height: 3800px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .wrap {
-  width: 84%;
+  width: 84vw;
   max-width: 1100px;
   margin: 0 auto;
   background-color: white;
 }
+
+.wrap{
+  @include breakpoint(small only) {
+    width: 96vw;
+    margin: 0 auto;
+  }
+  @include breakpoint(medium) {
+    width: 94vw;
+    margin: 0 auto;
+  }
+}
+
+.logo{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+.sub-title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+
+
+.top-bar{
+  background-color: rgba(230, 230, 230, 0)
+}
+.top-bar-right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.top-bar, .top-bar ul{
+  background-color: rgba(230, 230, 230, 0);
+}
+.is-dropdown-submenu{
+  border: none;
+}
+.is-dropdown-submenu>li{
+  display: flex;
+  justify-content: flex-end;
+}
+.menutext{
+  font-size: 1.04rem;
+  font-weight: bold;
+  color: black;
+}
+
 #myname {
   font-weight: bolder;
   font-size: 1.37em;
@@ -32,4 +88,48 @@ body {
 }
 .callout {
   background-color: rgba(255, 222, 173, 0);
+  border: none;
+}
+
+#my-title {
+  @include breakpoint(small all) {
+    display: flex;
+    width: 100%;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 0.77em;
+  }
+  @include breakpoint(medium) {
+    display: none;
+  }
+  @include breakpoint(large){
+    display: none;
+  }
+}
+
+.menu .menu-text {
+  @include breakpoint(small all) {
+    display: none
+  }
+  @include breakpoint(medium){
+    display: flex;
+  }
+  @include breakpoint(large){
+    display: flex;
+  }
+
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
 }
