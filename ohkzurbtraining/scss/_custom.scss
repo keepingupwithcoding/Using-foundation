@@ -1,31 +1,39 @@
 
 body {
-  background: url('../assets/white_pattern.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-  background-color: #b8b3c3;
-  height: 100vh;
-  margin: 0 auto;
-  max-height: 3800px;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  max-height: 3800px;
+  height: 100vh;
+  @include breakpoint(small all){
+    background-color: #2d383d;
+  }
+  @include breakpoint(medium){
+    background-color: #2d383d;
+  }
+  @include breakpoint(large){
+    // background: url('../assets/orange_pattern.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: rgba(141, 157, 167, 0.72);
+  }
 }
 .wrap {
-  width: 84vw;
-  max-width: 1100px;
+  max-width: 1111px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff;
 }
 
 .wrap{
   @include breakpoint(small only) {
     width: 96vw;
-    margin: 0 auto;
   }
   @include breakpoint(medium) {
     width: 94vw;
-    margin: 0 auto;
+  }
+  @include breakpoint(large) {
+    width: 83vw;
   }
 }
 .logo{
@@ -66,6 +74,10 @@ body {
   text-transform: capitalize;
   @include breakpoint(small all){
     font-size: 0.88em;
+    line-height: 18px;
+  }
+  @include breakpoint(medium){
+    margin-top: 33px;
   }
   @include breakpoint(large){
     font-size: 1.46em;
@@ -75,22 +87,22 @@ body {
   display: flex;
   font-size: 1em;
   font-weight: lighter;
-  color: #f5efc4;
+  color: #cdaa72;
   @include breakpoint(small all){
     font-size: 0.66em;
     justify-content: flex-start;
+    padding-top: 8px;
   }
   @include breakpoint(large){
     font-size: 1.21em;
     justify-content: flex-end;
   }
-}  
+}
 #main-nav{
   // background-color: rgb(255, 244, 218);
 }
 .top-bar{
   background-color: rgba(230, 230, 230, 0);
-  margin-bottom: 51px;
 }
 .top-bar-right{
   width: 100%;
@@ -98,8 +110,8 @@ body {
   justify-content: center;
 }
 .top-bar, .top-bar ul{
-  background-color: #5199A5;
-  // background-color: rgba(255, 159, 159, 0.25);
+  background-color: #2d383d;
+  // background-color: rgba(45, 56, 61, 0.72);
 }
 .title-bar{
   background-color: #5199A5;
@@ -112,11 +124,26 @@ body {
   justify-content: flex-end;
 }
 .menutext{
-  font-size: 1.04rem;
-  font-weight: bold;
-  color: #fefefe;
+  color: #a3dbe5;
+  @include breakpoint(small all){
+    font-size: 1.04rem;
+    font-weight: bold;
+  }
+  @include breakpoint(medium){
+  }
+  @include breakpoint(large){
+    font-size: 1.33rem;
+    letter-spacing: 0.022em;
+    font-weight: normal;
+  }
 }
-
+.drilldown a{
+  background-color: rgba(231, 214, 113, 0);
+  color: #fefefe
+}
+.is-drilldown{
+  min-height: 157.5px;
+}
 #myname {
   font-weight: bolder;
   font-size: 1.37em;
@@ -185,5 +212,8 @@ body {
 }
 a{
   color: #5199A5;
-  color: #fefefe;
+  color: #5199a5;
+}
+a:hover, a:focus{
+  color: #cdaa72;
 }
