@@ -32,25 +32,58 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  background: url('../assets/1920.png');
+  background: url('../assets/initials_bush.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 400px;
+  @include breakpoint(small all){
+    height: 128px;
+  }
+  @include breakpoint(medium){
+    height: 258px;
+  }
+  @include breakpoint(large){
+    height: 400px;
+  }
 }
 .logo-image{
-  background: url('../assets/musket.png');
-  background-size: cover;
-  background-position: right;
-  background-repeat: no-repeat;
-  height: 122px;
+  // background: url('../assets/musket.png');
+  // background-size: cover;
+  // background-position: right;
+  // background-repeat: no-repeat;
+  // height: 122px;
 }
 .sub-title{
   display: flex;
   width: 100%;
-  justify-content: flex-start;
-  padding: 24px 0;
-  font-weight: bold;
-  font-size: 1.2em;
+  justify-content: flex-end;
+  font-weight: normal;
+  letter-spacing: 0.034em;
+  font-size: 1.33em;
+  color: #b5f3fd;
+  padding-top: 24px;
+  text-transform: capitalize;
+  @include breakpoint(small all){
+    font-size: 0.88em;
+  }
+  @include breakpoint(large){
+    font-size: 1.46em;
+  }
+}
+.sub-name{
+  display: flex;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #f5efc4;
+  @include breakpoint(small all){
+    font-size: 0.66em;
+    justify-content: flex-start;
+  }
+  @include breakpoint(large){
+    font-size: 1.21em;
+    justify-content: flex-end;
+  }
 }
 #main-nav{
   // background-color: rgb(255, 244, 218);
@@ -65,8 +98,11 @@ body {
   justify-content: center;
 }
 .top-bar, .top-bar ul{
-  background-color: rgba(230, 230, 230, 0);
+  background-color: #5199A5;
   // background-color: rgba(255, 159, 159, 0.25);
+}
+.title-bar{
+  background-color: #5199A5;
 }
 .is-dropdown-submenu{
   border: none;
@@ -78,7 +114,7 @@ body {
 .menutext{
   font-size: 1.04rem;
   font-weight: bold;
-  color: black;
+  color: #fefefe;
 }
 
 #myname {
@@ -104,21 +140,21 @@ body {
   border: none;
 }
 
-#my-title {
-  @include breakpoint(small all) {
-    display: flex;
-    width: 100%;
-    font-weight: lighter;
-    font-style: italic;
-    font-size: 0.77em;
-  }
-  @include breakpoint(medium) {
-    display: none;
-  }
-  @include breakpoint(large){
-    display: none;
-  }
-}
+// #my-title {
+//   @include breakpoint(small all) {
+//     display: flex;
+//     width: 100%;
+//     font-weight: lighter;
+//     font-style: italic;
+//     font-size: 0.77em;
+//   }
+//   @include breakpoint(medium) {
+//     display: none;
+//   }
+//   @include breakpoint(large){
+//     display: none;
+//   }
+// }
 .menu .menu-text {
   @include breakpoint(small all) {
     display: none
@@ -148,5 +184,6 @@ body {
   }
 }
 a{
-  color: #ee783f;
+  color: #5199A5;
+  color: #fefefe;
 }
