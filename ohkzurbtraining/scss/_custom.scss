@@ -40,7 +40,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  background: url('../assets/initials_vortex.png');
+  background: url('../assets/initials_logo7.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,25 +69,25 @@ body {
   font-weight: normal;
   letter-spacing: 0.034em;
   font-size: 1.33em;
-  color: #b5f3fd;
+  color: #e1eaec;
   padding-top: 24px;
   text-transform: capitalize;
   @include breakpoint(small all){
-    font-size: 0.88em;
+    font-size: 2.088em;
     line-height: 18px;
   }
   @include breakpoint(medium){
     margin-top: 33px;
   }
   @include breakpoint(large){
-    font-size: 1.46em;
+    font-size: 2em;
   }
 }
 .sub-name{
   display: flex;
   font-size: 1em;
   font-weight: lighter;
-  color: #cdaa72;
+  color: #8ddbe8;
   @include breakpoint(small all){
     font-size: 0.66em;
     justify-content: flex-start;
