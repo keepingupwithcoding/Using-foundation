@@ -40,7 +40,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  background: url('../assets/initials_logo7.png');
+  background: url('../assets/initials_logo9.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,38 +65,55 @@ body {
 .sub-title{
   display: flex;
   width: 100%;
-  justify-content: flex-end;
   font-weight: normal;
   letter-spacing: 0.034em;
-  font-size: 1.33em;
   color: #e1eaec;
   padding-top: 24px;
   text-transform: capitalize;
   @include breakpoint(small all){
-    font-size: 2.088em;
-    line-height: 18px;
+    font-size: 1.44em;
+    line-height: 27px;
+    letter-spacing: 0;
+    padding-top: 34px;
+    justify-content: flex-start;
   }
   @include breakpoint(medium){
     margin-top: 33px;
+    font-size: 1.2em;
+    line-height: 44px;
+    justify-content: flex-start;
+    font-size: 2.72em;
   }
   @include breakpoint(large){
-    font-size: 2em;
+    font-size: 3.1em;
+    width: 100%;
+    letter-spacing: 0;
+    justify-content: flex-end;
+    margin-top: 0;
+    line-height: 38px;
   }
 }
 .sub-name{
   display: flex;
-  font-size: 1em;
   font-weight: lighter;
   color: #8ddbe8;
   @include breakpoint(small all){
-    font-size: 0.66em;
+    font-size: 0.84em;
     justify-content: flex-start;
-    padding-top: 8px;
+    padding-top: 0px;
   }
+  @include breakpoint(medium){
+    font-size: 1.18em;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0;
+    }
   @include breakpoint(large){
-    font-size: 1.21em;
+    font-size: 1.45em;
+    width: 100%;
     justify-content: flex-end;
-  }
+    padding: 0;
+    }
 }
 #main-nav{
   // background-color: rgb(255, 244, 218);
@@ -134,7 +151,7 @@ body {
   @include breakpoint(large){
     font-size: 1.33rem;
     letter-spacing: 0.022em;
-    font-weight: normal;
+    font-weight: bold;
   }
 }
 .drilldown a{
