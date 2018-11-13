@@ -12,11 +12,7 @@ body {
     background-color: #2d383d;
   }
   @include breakpoint(large){
-    // background: url('../assets/orange_pattern.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat;
-    background-color: rgba(141, 157, 167, 0.72);
+    background-color: rgba(231, 233, 234, 0.99);
   }
 }
 .wrap {
@@ -69,27 +65,29 @@ body {
   letter-spacing: 0.034em;
   color: #e1eaec;
   padding-top: 24px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   @include breakpoint(small all){
     font-size: 1.44em;
     line-height: 27px;
     letter-spacing: 0;
-    padding-top: 34px;
+    padding-top: 38px;
     justify-content: flex-start;
   }
   @include breakpoint(medium){
     margin-top: 33px;
-    font-size: 1.2em;
+    font-size: 1.16em;
     line-height: 44px;
+    line-height: 20px;
     justify-content: flex-start;
     font-size: 2.72em;
   }
   @include breakpoint(large){
-    font-size: 3.1em;
+    font-size: 2.3em;
+    font-weight: 300;
     width: 100%;
-    letter-spacing: 0;
     justify-content: flex-end;
     margin-top: 0;
+    padding: 0;
     line-height: 38px;
   }
 }
@@ -111,9 +109,26 @@ body {
   @include breakpoint(large){
     font-size: 1.45em;
     width: 100%;
+    font-weight: bold;
     justify-content: flex-end;
     padding: 0;
     }
+}
+.header-topic{
+  display: flex;
+  color: wheat;
+  @include breakpoint(small all){
+    font-size: 0.76em;
+
+  }
+  @include breakpoint(medium){
+    font-size: 0.78em;
+  }
+  @include breakpoint(large){
+    font-size: 1em;
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
 #main-nav{
   // background-color: rgb(255, 244, 218);
@@ -127,8 +142,7 @@ body {
   justify-content: center;
 }
 .top-bar, .top-bar ul{
-  background-color: #2d383d;
-  // background-color: rgba(45, 56, 61, 0.72);
+  background-color: #0f1619;
 }
 .title-bar{
   background-color: #5199A5;
@@ -141,7 +155,7 @@ body {
   justify-content: flex-end;
 }
 .menutext{
-  color: #a3dbe5;
+  color: #e7e9ea;
   @include breakpoint(small all){
     font-size: 1.04rem;
     font-weight: bold;
@@ -149,9 +163,10 @@ body {
   @include breakpoint(medium){
   }
   @include breakpoint(large){
-    font-size: 1.33rem;
-    letter-spacing: 0.022em;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
   }
 }
 .drilldown a{
