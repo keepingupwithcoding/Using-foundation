@@ -67,19 +67,19 @@ body {
   padding-top: 24px;
   text-transform: uppercase;
   @include breakpoint(small all){
-    font-size: 1.44em;
-    line-height: 27px;
+    font-size: 1.34em;
+    line-height: 22px;
     letter-spacing: 0;
-    padding-top: 38px;
+    padding-top: 32px;
     justify-content: flex-start;
   }
   @include breakpoint(medium){
     margin-top: 33px;
-    font-size: 1.16em;
+    font-size: 1.48em;
     line-height: 44px;
     line-height: 20px;
     justify-content: flex-start;
-    font-size: 2.72em;
+    font-size: 2.22em;
   }
   @include breakpoint(large){
     font-size: 2.3em;
@@ -183,7 +183,7 @@ body {
 }
 .moto {
   display: flex;
-  color: red;
+  color: #9E9E9E;
   font-size: 1.04em;
   font-style: italic;
   align-self: center;
@@ -245,7 +245,24 @@ body {
 a{
   color: #5199A5;
   color: #5199a5;
+  // font-weight: bold;
 }
 a:hover, a:focus{
   color: #cdaa72;
+}
+
+.quick_links{
+  font-style: italic;
+  font-family: serif;
+  display: flex;
+  font-size: 1.17em;
+  font-weight: 1.3em;
+  color: #5199A5;
+}
+.footer{
+  background-image: url('../assets/1920.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7px;
 }
