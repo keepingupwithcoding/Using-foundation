@@ -4,9 +4,6 @@
 #   - js: Name of the JavaScript file. 'accordion' becomes 'foundation.accordion.js'
 
 
-
-exclude: []
-
 xy_grid:
   sass: xy-grid-classes
 
