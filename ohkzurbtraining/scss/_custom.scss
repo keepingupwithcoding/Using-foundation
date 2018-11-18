@@ -30,7 +30,7 @@ body {
   }
   @include breakpoint(large) {
     width: 83vw;
-  }
+  } 
 }
 .logo{
   display: flex;
@@ -211,7 +211,7 @@ body {
   font-size: 1.04em;
   font-style: italic;
   align-self: center;
-} 
+}
 .ohk_hero {
   // background: url('../assets/polygons.png');
   // background-position: center;
