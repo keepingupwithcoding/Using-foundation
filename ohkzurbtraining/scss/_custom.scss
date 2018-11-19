@@ -20,7 +20,6 @@ body {
   margin: 0 auto;
   background-color: #fff;
 }
-
 .wrap{
   @include breakpoint(small only) {
     width: 96vw;
@@ -30,7 +29,7 @@ body {
   }
   @include breakpoint(large) {
     width: 83vw;
-  } 
+  }
 }
 .logo{
   display: flex;
